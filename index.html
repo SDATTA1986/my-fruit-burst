@@ -37,7 +37,7 @@
 
 <body>
   <!-- header section begins -->
-  <header class="max-w-screen-xl mx-auto font-lato ">
+  <header class="max-w-screen-xl mx-auto font-lato relative ">
     <!-- navbar section begins -->
     <nav class="h-32 my-12 py-8 px-12 bg-[#F85559] rounded-[600px] text-white flex gap-40 items-center">
       <div class=" flex flex-1 justify-between text-lg font-medium">
@@ -71,7 +71,7 @@
     <!-- carousel section begins -->
     <section>
 
-      <div class="carousel w-full rounded-lg">
+      <div class="carousel w-full rounded-lg ">
         <div id="slide1" class="carousel-item relative w-full ">
           <div class="absolute text-white text-center space-y-[32px]   pt-[79px] pl-[350px]">
             <h1 class="text-7xl font-extrabold">Exotic tastes at your <br> doorstep</h1>
@@ -87,6 +87,7 @@
             <a href="#slide4" class="btn btn-circle">❮</a>
             <a href="#slide2" class="btn btn-circle">❯</a>
           </div>
+
         </div>
         <div id="slide2" class="carousel-item relative w-full">
           <div class="absolute text-white text-center space-y-[32px]   pt-[79px] pl-[350px]">
@@ -94,15 +95,8 @@
             <p class="text-xl font-medium">We supply highly quality organic products</p>
             <button class="btn bg-[#F85559] border-none">Shop Now</button>
           </div>
-          
 
-          
-            <img src="./images/banner2.png" class="w-full " />
-
-           
-          
-            
-            
+          <img src="./images/banner2.png" class="w-full " />
 
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
             <a href="#slide1" class="btn btn-circle">❮</a>
@@ -116,13 +110,7 @@
             <button class="btn bg-[#F85559] border-none">Shop Now</button>
           </div>
 
-          
-            <img src="./images/banner3.png" class="w-full " />
-            
-
-          
-
-
+          <img src="./images/banner3.png" class="w-full " />
 
           <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2 ">
             <a href="#slide2" class="btn btn-circle">❮</a>
@@ -141,15 +129,48 @@
             <a href="#slide1" class="btn btn-circle">❯</a>
           </div>
         </div>
+
       </div>
     </section>
     <!-- carousel section ends -->
+    <!-- overlay fruits section begins -->
+    <section>
+      <div
+        class="max-w-screen-lg absolute mx-auto flex left-[122px] justify-evenly w-[1196px] text-center rounded-lg font-medium text-xl bg-white top-[630px] text-black"
+        style="box-shadow: 0px 8px 60px 0px rgba(0, 0, 0, 0.05);
+        ">
+        <div class="space-y-4 ">
+          <img src="./images/fruit1.png" alt="">
+          <p> Strawberry</p>
+        </div>
+        <div class="space-y-4">
+          <img src="./images/fruit2.png" alt="">
+          <p> Orange</p>
+        </div>
+        <div class="space-y-4">
+          <img src="./images/fruit3.png" alt="">
+          <p> Mango</p>
+        </div>
+        <div class="space-y-4">
+          <img src="./images/fruit4.png" alt="">
+          <p> Strawberry</p>
+        </div>
+        <div class="space-y-4">
+          <img src="./images/fruit5.png" alt="">
+          <p> Mango</p>
+        </div>
+
+
+
+      </div>
+    </section>
+    <!-- overlay fruit section ends -->
   </header>
   <!-- header section ends -->
   <!-- main section begins -->
   <main>
     <!-- Deal of the day section begins -->
-    <section class="max-w-screen-xl mx-auto font-lato mt-36">
+    <section class="max-w-screen-xl mx-auto font-lato mt-[265px]">
       <div class="flex  justify-between">
         <div class="max-w-[615px] space-y-4">
           <h3 class="font-extrabold text-5xl">Deal of the day</h3>
@@ -202,7 +223,7 @@
               <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
             </div>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="text-[#F85559] text-lg font-bold "  onclick="my_modal_1.showModal()">Details</button>
+            <button class="text-[#F85559] text-lg font-bold " onclick="my_modal_1.showModal()">Details</button>
             <dialog id="my_modal_1" class="modal">
               <form method="dialog" class="modal-box">
                 <div class="card  ">
@@ -229,7 +250,7 @@
                 </div>
                 <div class="modal-action flex justify-center gap-8">
                   <!-- if there is a button in form, it will close the modal -->
-                  <button 
+                  <button
                     class="btn rounded-lg border border-[#F85559] text-[#F85559] font-extrabold text-xl">Close</button>
                   <button class="btn bg-[#F85559] border-none rounded-lg">Buy Now</button>
                 </div>
@@ -318,7 +339,7 @@
               <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
             </div>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="text-[#F85559] text-lg font-bold "  onclick="my_modal_3.showModal()">Details</button>
+            <button class="text-[#F85559] text-lg font-bold " onclick="my_modal_3.showModal()">Details</button>
             <dialog id="my_modal_3" class="modal">
               <form method="dialog" class="modal-box">
                 <div class="card  ">
@@ -376,7 +397,7 @@
               <input type="radio" name="rating-10" class="bg-[#FBC0A8] mask mask-star-2 mask-half-2" />
             </div>
             <!-- Open the modal using ID.showModal() method -->
-            <button class="text-[#F85559] text-lg font-bold"  onclick="my_modal_4.showModal()">Details</button>
+            <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_4.showModal()">Details</button>
             <dialog id="my_modal_4" class="modal">
               <form method="dialog" class="modal-box">
                 <div class="card  ">
@@ -435,7 +456,7 @@
           <h1 class="text-2xl font-bold mb-2">Awlad Hossain</h1>
           <p class="font-medium text-base mb-4 ">Fruits Expert</p>
           <div class="flex gap-3 justify-center">
-            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;" ></i>
+            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-twitter w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-linkedin w-6 h-6" style="color: #f85559;"></i>
           </div>
@@ -446,7 +467,7 @@
           <h1 class="text-2xl font-bold mb-2">Safia Chowdhury</h1>
           <p class="font-medium text-base mb-4 ">Fruits Expert</p>
           <div class="flex gap-3 justify-center">
-            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;" ></i>
+            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-twitter w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-linkedin w-6 h-6" style="color: #f85559;"></i>
           </div>
@@ -457,7 +478,7 @@
           <h1 class="text-2xl font-bold mb-2">Rokib Hossain</h1>
           <p class="font-medium text-base mb-4 ">Fruits Expert</p>
           <div class="flex gap-3 justify-center">
-            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;" ></i>
+            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-twitter w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-linkedin w-6 h-6" style="color: #f85559;"></i>
           </div>
@@ -468,13 +489,13 @@
           <h1 class="text-2xl font-bold mb-2">Chaity</h1>
           <p class="font-medium text-base mb-4 ">Fruits Expert</p>
           <div class="flex gap-3 justify-center">
-            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;" ></i>
+            <i class="fa-brands fa-facebook w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-twitter w-6 h-6" style="color: #f85559;"></i>
             <i class="fa-brands fa-linkedin w-6 h-6" style="color: #f85559;"></i>
           </div>
         </div>
 
-         
+
       </div>
     </section>
     <!-- meet the team section ends -->
